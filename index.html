@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#14110f">
+  <meta name="description" content="Кофейня «Утренний код» — specialty кофе, десерты и место для работы. Бронь столиков онлайн. Портфолио-проект.">
+  <title data-i18n="page.title">Утренний код — кофейня для тех, кто думает</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__inner">
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#menu" class="nav__link" data-i18n="nav.menu">Меню</a></li>
+          <li><a href="#about" class="nav__link" data-i18n="nav.about">О нас</a></li>
+          <li><a href="#gallery" class="nav__link" data-i18n="nav.gallery">Атмосфера</a></li>
+          <li><a href="#booking" class="nav__link" data-i18n="nav.booking">Бронь</a></li>
+          <li><a href="#disclaimer" class="nav__link" data-i18n="nav.portfolio">Портфолио</a></li>
+          <li><a href="#contacts" class="nav__link" data-i18n="nav.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКОВ -->
+      <div class="lang" id="lang">
+        <button class="lang__btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+          <span class="lang__flag" id="langFlag">🇷🇺</span>
+          <span class="lang__current" id="langCurrent">Русский</span>
+          <svg class="lang__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <ul class="lang__menu" id="langMenu">
+          <li><button class="lang__item" data-lang="ru">
+            <span class="lang__item-flag">🇷🇺</span>
+            <span class="lang__item-name">Русский</span>
+            <span class="lang__item-code">RU</span>
+            <span class="lang__check">✓</span>
+          </button></li>
+          <li><button class="lang__item" data-lang="en">
+            <span class="lang__item-flag">🇬🇧</span>
+            <span class="lang__item-name">English</span>
+            <span class="lang__item-code">EN</span>
+            <span class="lang__check">✓</span>
+          </button></li>
+          <li><button class="lang__item" data-lang="es">
+            <span class="lang__item-flag">🇪🇸</span>
+            <span class="lang__item-name">Español</span>
+            <span class="lang__item-code">ES</span>
+            <span class="lang__check">✓</span>
+          </button></li>
+          <li><button class="lang__item" data-lang="zh">
+            <span class="lang__item-flag">🇨🇳</span>
+            <span class="lang__item-name">中文</span>
+            <span class="lang__item-code">ZH</span>
+            <span class="lang__check">✓</span>
+          </button></li>
+          <li><button class="lang__item" data-lang="fr">
+            <span class="lang__item-flag">🇫🇷</span>
+            <span class="lang__item-name">Français</span>
+            <span class="lang__item-code">FR</span>
+            <span class="lang__check">✓</span>
+          </button></li>
+          <li><button class="lang__item" data-lang="ar">
+            <span class="lang__item-flag">🇸🇦</span>
+            <span class="lang__item-name">العربية</span>
+            <span class="lang__item-code">AR</span>
+            <span class="lang__check">✓</span>
+          </button></li>
+        </ul>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="images/hero-coffee.jpg" alt="" loading="eager">
+    </div>
+    <div class="container hero__content">
+      <p class="hero__label" data-i18n="hero.label">specialty coffee · с 8:00</p>
+      <h1 class="hero__title" data-i18n="hero.title">Кофе, который компилируется с первого раза</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">Место, где бариста знает разницу между espresso и express, а Wi-Fi не падает в самый ответственный момент.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary" data-i18n="hero.btnMenu">Смотреть меню</a>
+        <a href="#booking" class="btn btn--ghost" data-i18n="hero.btnBook">Забронировать столик</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__image">
+        <img src="images/about-interior.jpg" alt="" loading="lazy">
+      </div>
+      <div class="about__text">
+        <p class="section-label" data-i18n="about.label">О нас</p>
+        <h2 class="section-title" data-i18n="about.title">Кофейня, в которой хочется остаться</h2>
+        <p data-i18n="about.p1">Мы открылись в 2021 году с простой идеей: сделать место, где можно выпить честный кофе и спокойно поработать.</p>
+        <p data-i18n="about.p2">Зерно обжариваем сами, молоко — от местной фермы, десерты печём каждое утро. А ещё у нас есть розетки за каждым столом и Wi-Fi 500 Мбит/с.</p>
+        <ul class="about__stats">
+          <li><strong>4</strong><span data-i18n="about.stat1">года работаем</span></li>
+          <li><strong>12</strong><span data-i18n="about.stat2">сортов зерна</span></li>
+          <li><strong>500</strong><span data-i18n="about.stat3">Мбит/с Wi-Fi</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <p class="section-label" data-i18n="menu.label">Меню</p>
+      <h2 class="section-title" data-i18n="menu.title">Что у нас есть</h2>
+      <p class="section-subtitle" data-i18n="menu.subtitle">Всё готовим на зерне собственной обжарки</p>
+
+      <h3 class="menu__group-title" data-i18n="menu.coffee">Кофе</h3>
+      <div class="menu__grid">
+        <article class="card">
+          <div class="card__img"><img src="images/menu-espresso.jpg" alt="" loading="lazy"></div>
+          <div class="card__body">
+            <h4 class="card__title" data-i18n="item.espresso">Эспрессо</h4>
+            <p class="card__desc" data-i18n="desc.espresso">Двойной, плотный, с нотками шоколада</p>
+            <span class="card__price">150 ₽</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="images/menu-cappuccino.jpg" alt="" loading="lazy"></div>
+          <div class="card__body">
+            <h4 class="card__title" data-i18n="item.cappuccino">Капучино</h4>
+            <p class="card__desc" data-i18n="desc.cappuccino">Бархатная молочная пена, классика</p>
+            <span class="card__price">220 ₽</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="images/menu-latte.jpg" alt="" loading="lazy"></div>
+          <div class="card__body">
+            <h4 class="card__title" data-i18n="item.latte">Латте</h4>
+            <p class="card__desc" data-i18n="desc.latte">Мягкий, молочный, на 300 мл</p>
+            <span class="card__price">240 ₽</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="images/menu-raf.jpg" alt="" loading="lazy"></div>
+          <div class="card__body">
+            <h4 class="card__title" data-i18n="item.raf">Раф</h4>
+            <p class="card__desc" data-i18n="desc.raf">Сливки, ваниль и корица</p>
+            <span class="card__price">280 ₽</span>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="menu__group-title" data-i18n="menu.desserts">Десерты</h3>
+      <div class="menu__grid menu__grid--two">
+        <article class="card">
+          <div class="card__img"><img src="images/menu-cheesecake.jpg" alt="" loading="lazy"></div>
+          <div class="card__body">
+            <h4 class="card__title" data-i18n="item.cheesecake">Чизкейк</h4>
+            <p class="card__desc" data-i18n="desc.cheesecake">Нью-Йорк с ягодным соусом</p>
+            <span class="card__price">320 ₽</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="images/menu-croissant.jpg" alt="" loading="lazy"></div>
+          <div class="card__body">
+            <h4 class="card__title" data-i18n="item.croissant">Круассан</h4>
+            <p class="card__desc" data-i18n="desc.croissant">Сливочный, печём каждое утро</p>
+            <span class="card__price">180 ₽</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <p class="section-label" data-i18n="gallery.label">Атмосфера</p>
+      <h2 class="section-title" data-i18n="gallery.title">Загляни внутрь</h2>
+      <div class="gallery__grid">
+        <img src="images/gallery-1-coffee.jpg" alt="" class="gallery__item gallery__item--wide" loading="lazy">
+        <img src="images/gallery-2-coffee.jpg" alt="" class="gallery__item" loading="lazy">
+        <img src="images/gallery-3-coffee.jpg" alt="" class="gallery__item" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING ===== -->
+  <section class="booking" id="booking">
+    <div class="container booking__inner">
+      <div class="booking__text">
+        <p class="section-label" data-i18n="booking.label">Бронь</p>
+        <h2 class="section-title" data-i18n="booking.title">Забронировать столик</h2>
+        <p data-i18n="booking.text">Оставь заявку — перезвоним в течение 15 минут и подтвердим бронь.</p>
+      </div>
+      <form class="booking__form" id="bookingForm">
+        <input type="text" name="name" data-i18n-placeholder="form.name" placeholder="Как тебя зовут?" required>
+        <input type="tel" name="phone" data-i18n-placeholder="form.phone" placeholder="Телефон" required>
+        <input type="date" name="date" required>
+        <select name="time" required>
+          <option value="" data-i18n="form.time">Время</option>
+          <option>09:00</option><option>11:00</option><option>13:00</option>
+          <option>15:00</option><option>17:00</option><option>19:00</option>
+        </select>
+        <select name="guests" required>
+          <option value="" data-i18n="form.guests">Гостей</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+        </select>
+        <button type="submit" class="btn btn--primary" data-i18n="form.submit">Отправить заявку</button>
+        <p class="booking__note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== DISCLAIMER ===== -->
+  <section class="disclaimer" id="disclaimer">
+    <div class="container disclaimer__inner">
+      <div class="disclaimer__icon">⚠️</div>
+      <div class="disclaimer__text">
+        <p class="section-label" data-i18n="disc.label">Важно</p>
+        <h2 class="section-title" data-i18n="disc.title">Это портфолио-проект</h2>
+        <p data-i18n="disc.text">Данный сайт создан исключительно в демонстрационных целях для портфолио. Кофейня «Утренний код» — вымышленная. Организации не существует, все адреса, телефоны, цены и фотографии — художественный вымысел.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__desc" data-i18n="footer.desc">Кофейня для тех, кто думает.</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.address">Адрес</h4>
+        <p data-i18n="footer.addressText">г. Москва, ул. Программистов, 42</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.hours">Часы работы</h4>
+        <p data-i18n="footer.hoursText">Пн–Пт: 8:00 – 22:00 · Сб–Вс: 9:00 – 23:00</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.contacts">Контакты</h4>
+        <p><a href="tel:+79990000000">+7 (999) 000-00-00</a><br>
+        <a href="mailto:hi@utrenniy-kod.ru">hi@utrenniy-kod.ru</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer.copy">© 2026 Утренний код. Портфолио-проект. Организация вымышлена.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
